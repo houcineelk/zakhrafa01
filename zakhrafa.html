@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>زخرفة الأسماء | موقع زخرف اسمك الاحترافي 2025</title>
+    <meta name="description" content="أفضل موقع لزخرفة الأسماء والنصوص العربية والإنجليزية أونلاين. احصل على عشرات الزخارف الاحترافية لاسمك، جاهزة للنسخ والمشاركة على السوشيال ميديا والألعاب.">
+    <meta name="keywords" content="زخرفة, زخرفة اسماء, زخرفة نصوص, زخرفة ببجي, زخرفة اسماء فيس بوك, زخرفة اسماء ايفون, زخرفة اسماء العاب, زخرفة فورية, زخرفة اون لاين">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" xintegrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            font-family: 'Tajawal', 'Inter', sans-serif;
+            background-color: #111827; /* Dark Blue-Gray */
+            color: #e5e7eb;
+        }
+        .main-gradient {
+            background-image: linear-gradient(to right, #4f46e5, #9333ea);
+        }
+        .glassmorphism {
+            background: rgba(31, 41, 55, 0.6); /* bg-gray-800 with opacity */
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .tab-active {
+            background-color: #4f46e5;
+            color: white;
+        }
+        .tab-inactive {
+            background-color: #374151; /* bg-gray-700 */
+            color: #d1d5db; /* text-gray-300 */
+        }
+        .result-item {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .result-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.3), 0 4px 6px -2px rgba(79, 70, 229, 0.2);
+        }
+        .copy-btn, .share-btn {
+            transition: background-color 0.2s ease;
+        }
+        .copy-btn:hover {
+            background-color: #34d399; /* emerald-400 */
+        }
+        .share-btn:hover {
+            background-color: #60a5fa; /* blue-400 */
+        }
+        .placeholder-ad {
+            background-color: #374151;
+            border: 2px dashed #4b5563;
+            color: #9ca3af;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.875rem;
+            min-height: 90px;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="py-4 shadow-lg glassmorphism sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold main-gradient bg-clip-text text-transparent">
+                <i class="fas fa-magic-wand-sparkles"></i> زخرف اسمك
+            </h1>
+            <nav class="hidden md:flex space-x-6 space-x-reverse">
+                <a href="#decorator" class="hover:text-indigo-400 transition-colors">الرئيسية</a>
+                <a href="#ready-names" class="hover:text-indigo-400 transition-colors">أسماء جاهزة</a>
+                <a href="#random-generator" class="hover:text-indigo-400 transition-colors">مولد عشوائي</a>
+            </nav>
+            <button class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-6 lg:p-8">
+        
+        <!-- Hero Section -->
+        <section class="text-center my-8 md:my-16">
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight">
+                أطلق العنان لاسمك <span class="main-gradient bg-clip-text text-transparent">بزخارف احترافية</span>
+            </h2>
+            <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
+                أداة الزخرفة الأقوى لعام 2025. قم بزخرفة اسمك أو نصوصك بضغطة زر واحصل على أشكال فريدة ومميزة للألعاب ومواقع التواصل الاجتماعي.
+            </p>
+        </section>
+
+        <!-- Main Decorator Tool -->
+        <section id="decorator" class="mb-12">
+            <div class="glassmorphism rounded-2xl p-6 md:p-8 shadow-2xl">
+                <div class="flex flex-col md:flex-row gap-4 mb-6">
+                    <input type="text" id="name-input" placeholder="اكتب اسمك أو الكلمة هنا..." class="w-full p-4 bg-gray-900 border-2 border-gray-700 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-lg outline-none transition-all">
+                    <select id="language-select" class="p-4 bg-gray-900 border-2 border-gray-700 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-lg outline-none transition-all">
+                        <option value="arabic">عربي</option>
+                        <option value="english">إنجليزي</option>
+                    </select>
+                </div>
+                
+                <!-- Ad 1 -->
+                <div class="placeholder-ad my-6 rounded-lg">مساحة إعلانية 1 (Google AdSense) - 728x90</div>
+
+                <div id="results-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <!-- Results will be injected here by JavaScript -->
+                    <div id="initial-message" class="col-span-full text-center text-gray-500 py-10">
+                        <i class="fas fa-keyboard text-4xl mb-4"></i>
+                        <p>ابدأ بكتابة اسمك في المربع أعلاه لترى سحر الزخارف!</p>
+                    </div>
+                </div>
+                <!-- Ad 2 -->
+                <div class="placeholder-ad mt-6 rounded-lg">مساحة إعلانية 2 (Google AdSense)</div>
+            </div>
+        </section>
+
+        <!-- Ad 3 -->
+        <div class="placeholder-ad my-12 rounded-lg">مساحة إعلانية 3 (Google AdSense)</div>
+
+        <!-- Ready-made Names Section -->
+        <section id="ready-names" class="mb-12">
+            <h3 class="text-3xl font-bold text-center mb-8">
+                <i class="fas fa-star-of-life main-gradient bg-clip-text text-transparent"></i>
+                أسماء جاهزة للنسخ
+            </h3>
+            <div class="glassmorphism rounded-2xl p-6 md:p-8 shadow-2xl">
+                <div class="flex justify-center mb-6 border-b border-gray-700">
+                    <button data-tab="boys" class="tab-btn tab-active px-6 py-3 font-semibold rounded-t-lg transition-colors">للشباب</button>
+                    <button data-tab="girls" class="tab-btn tab-inactive px-6 py-3 font-semibold rounded-t-lg transition-colors">للبنات</button>
+                    <button data-tab="games" class="tab-btn tab-inactive px-6 py-3 font-semibold rounded-t-lg transition-colors">للألعاب</button>
+                </div>
+                <!-- Ad 4 -->
+                <div class="placeholder-ad my-6 rounded-lg">مساحة إعلانية 4 (Google AdSense)</div>
+                <div id="tabs-content" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <!-- Content will be injected by JS -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- Ad 5 -->
+        <div class="placeholder-ad my-12 rounded-lg">مساحة إعلانية 5 (Google AdSense)</div>
+
+        <!-- Random Generator Section -->
+        <section id="random-generator" class="text-center mb-12">
+            <h3 class="text-3xl font-bold mb-4">مولد الأسماء العشوائي</h3>
+            <p class="text-gray-400 mb-6">لا تملك فكرة؟ دعنا نُبدع لك اسمًا مزخرفًا!</p>
+            <button id="random-btn" class="main-gradient text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all">
+                <i class="fas fa-dice-d20"></i>  توليد اسم عشوائي
+            </button>
+            <div id="random-result" class="mt-6 text-2xl font-mono p-4 bg-gray-900 rounded-lg min-h-[70px] flex items-center justify-center">
+            </div>
+        </section>
+        
+        <!-- Ad 6 -->
+        <div class="placeholder-ad my-6 rounded-lg">مساحة إعلانية 6 (Google AdSense)</div>
+        
+    </main>
+    
+    <!-- Ad 7 -->
+    <div class="container mx-auto px-4">
+        <div class="placeholder-ad my-6 rounded-lg">مساحة إعلانية 7 (Google AdSense)</div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 mt-12 py-8">
+        <div class="container mx-auto px-4 text-center text-gray-500">
+            <p>&copy; 2025 زخرف اسمك. جميع الحقوق محفوظة.</p>
+            <p>تم التصميم والتطوير بحب <i class="fas fa-heart text-red-500"></i></p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed bottom-5 right-5 bg-green-500 text-white py-2 px-5 rounded-lg shadow-xl opacity-0 translate-y-10 transition-all duration-300">
+        <i class="fas fa-check-circle"></i> تم النسخ بنجاح!
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const nameInput = document.getElementById('name-input');
+        const languageSelect = document.getElementById('language-select');
+        const resultsContainer = document.getElementById('results-container');
+        const initialMessage = document.getElementById('initial-message');
+        const toast = document.getElementById('toast');
+        
+        // --- DECORATION LOGIC ---
+        const arabicDecorations = [
+            (name) => `꧁${name}꧂`,
+            (name) => `༺${name}༻`,
+            (name) => `★彡${name}彡★`,
+            (name) => `[${name}]`,
+            (name) => `『${name}』`,
+            (name) => `«${name}»`,
+            (name) => `(${name})`,
+            (name) => name.split('').join(' '),
+            (name) => `뫌﴾${name}﴿뫄`,
+            (name) => `연${name}卍`,
+            (name) => `★${name}★`,
+            (name) => `气${name}气`,
+            (name) => `父${name}父`,
+        ];
+
+        const englishDecorations = [
+            (name) => `[̲̅[̲̅${name}]̲̅]̲̅`,
+            (name) => `▄︻デ${name}══━一`,
+            (name) => `【${name}】`,
+            (name) => `『${name}』`,
+            (name) => `♦ ${name} ♦`,
+            (name) => `••¤("'•.¸${name}¸.•'")¤••`,
+            (name) => `•´¯\\\`•.¸¸.•´¯\\\`•.¸¸.•´¯\\\`• ${name} •´¯\\\`•.¸¸.•´¯\\\`•.¸¸.•´¯\\\`•`,
+            (name) => `(¯\\\`'•.¸(¯\\\`'•.¸${name}¸.•'´¯)¸.•'´¯)`,
+            (name) => mapText(name, 'zαяgσ'),
+            (name) => mapText(name, 'flipped'),
+            (name) => mapText(name, 'cursive'),
+            (name) => mapText(name, 'bold_cursive'),
+            (name) => mapText(name, 'fraktur'),
+            (name) => mapText(name, 'bold_fraktur'),
+            (name) => mapText(name, 'double_struck'),
+            (name) => name.toUpperCase(),
+            (name) => name.toLowerCase(),
+        ];
+        
+        const charMaps = {
+            flipped: { 'a': 'ɐ', 'b': 'q', 'c': 'ɔ', 'd': 'p', 'e': 'ǝ', 'f': 'ɟ', 'g': 'ƃ', 'h': 'ɥ', 'i': 'ı', 'j': 'ɾ', 'k': 'ʞ', 'l': 'l', 'm': 'ɯ', 'n': 'u', 'o': 'o', 'p': 'd', 'q': 'b', 'r': 'ɹ', 's': 's', 't': 'ʇ', 'u': 'n', 'v': 'ʌ', 'w': 'ʍ', 'x': 'x', 'y': 'ʎ', 'z': 'z', 'A': '∀', 'B': 'B', 'C': 'Ɔ', 'D': 'D', 'E': 'Ǝ', 'F': 'Ⅎ', 'G': 'פ', 'H': 'H', 'I': 'I', 'J': 'ſ', 'K': 'K', 'L': '˥', 'M': 'W', 'N': 'N', 'O': 'O', 'P': 'Ԁ', 'Q': 'Q', 'R': 'R', 'S': 'S', 'T': '┴', 'U': '∩', 'V': 'Λ', 'W': 'M', 'X': 'X', 'Y': '⅄', 'Z': 'Z', '1': 'Ɩ', '2': 'ᄅ', '3': 'Ɛ', '4': 'ㄣ', '5': 'ϛ', '6': '9', '7': 'ㄥ', '8': '8', '9': '6', '0': '0'},
+            cursive: { 'a': '𝒶', 'b': '𝒷', 'c': '𝒸', 'd': '𝒹', 'e': '𝑒', 'f': '𝒻', 'g': '𝑔', 'h': '𝒽', 'i': '𝒾', 'j': '𝒿', 'k': '𝓀', 'l': '𝓁', 'm': '𝓂', 'n': '𝓃', 'o': '𝑜', 'p': '𝓅', 'q': '𝓆', 'r': '𝓇', 's': '𝓈', 't': '𝓉', 'u': '𝓊', 'v': '𝓋', 'w': '𝓌', 'x': '𝓍', 'y': '𝓎', 'z': '𝓏', 'A': '𝒜', 'B': '𝐵', 'C': '𝒞', 'D': '𝒟', 'E': '𝐸', 'F': '𝐹', 'G': '𝒢', 'H': '𝐻', 'I': '𝐼', 'J': '𝒥', 'K': '𝒦', 'L': '𝐿', 'M': '𝑀', 'N': '𝒩', 'O': '𝒪', 'P': '𝒫', 'Q': '𝒬', 'R': '𝑅', 'S': '𝒮', 'T': '𝒯', 'U': '𝒰', 'V': '𝒱', 'W': '𝒲', 'X': '𝒳', 'Y': '𝒴', 'Z': '𝒵'},
+            bold_cursive: { 'a': '𝓪', 'b': '𝓫', 'c': '𝓬', 'd': '𝓭', 'e': '𝓮', 'f': '𝓯', 'g': '𝓰', 'h': '𝓱', 'i': '𝓲', 'j': '𝓳', 'k': '𝓴', 'l': '𝓵', 'm': '𝓶', 'n': '𝓷', 'o': '𝓸', 'p': '𝓹', 'q': '𝓺', 'r': '𝓻', 's': '𝓼', 't': '𝓽', 'u': '𝓾', 'v': '𝓿', 'w': '𝔀', 'x': '𝔁', 'y': '𝔂', 'z': '𝔃', 'A': '𝓐', 'B': '𝓑', 'C': '𝓒', 'D': '𝓓', 'E': '𝓔', 'F': '𝓕', 'G': '𝓖', 'H': '𝓗', 'I': '𝓘', 'J': '𝓙', 'K': '𝓚', 'L': '𝓛', 'M': '𝓜', 'N': '𝓝', 'O': '𝓞', 'P': '𝓟', 'Q': '𝓠', 'R': '𝓡', 'S': '𝓢', 'T': '𝓣', 'U': '𝓤', 'V': '𝓥', 'W': '𝓦', 'X': '𝓧', 'Y': '𝓨', 'Z': '𝓩'},
+            fraktur: { 'a': '𝔞', 'b': '𝔟', 'c': '𝔠', 'd': '𝔡', 'e': '𝔢', 'f': '𝔣', 'g': '𝔤', 'h': '𝔥', 'i': '𝔦', 'j': '𝔧', 'k': '𝔨', 'l': '𝔩', 'm': '𝔪', 'n': '𝔫', 'o': '𝔬', 'p': '𝔭', 'q': '𝔮', 'r': '𝔯', 's': '𝔰', 't': '𝔱', 'u': '𝔲', 'v': '𝔳', 'w': '𝔴', 'x': '𝔵', 'y': '𝔶', 'z': '𝔷', 'A': '𝔄', 'B': '𝔅', 'C': 'ℭ', 'D': '𝔇', 'E': '𝔈', 'F': '𝔉', 'G': '𝔊', 'H': 'ℌ', 'I': 'ℑ', 'J': '𝔍', 'K': '𝔎', 'L': '𝔏', 'M': '𝔐', 'N': '𝔑', 'O': '𝔒', 'P': '𝔓', 'Q': '𝔔', 'R': 'ℜ', 'S': '𝔖', 'T': '𝔗', 'U': '𝔘', 'V': '𝔙', 'W': '𝔚', 'X': '𝔛', 'Y': '𝔜', 'Z': 'ℨ'},
+            bold_fraktur: { 'a': '𝖆', 'b': '𝖇', 'c': '𝖈', 'd': '𝖉', 'e': '𝖊', 'f': '𝖋', 'g': '𝖌', 'h': '𝖍', 'i': '𝖎', 'j': '𝖏', 'k': '𝖐', 'l': '𝖑', 'm': '𝖒', 'n': '𝖓', 'o': '𝖔', 'p': '𝖕', 'q': '𝖖', 'r': '𝖗', 's': '𝖘', 't': '𝖙', 'u': '𝖚', 'v': '𝖛', 'w': '𝖜', 'x': '𝖝', 'y': '𝖞', 'z': '𝖟', 'A': '𝕬', 'B': '𝕭', 'C': '𝕮', 'D': '𝕯', 'E': '𝕰', 'F': '𝕱', 'G': '𝕲', 'H': '𝕳', 'I': '𝕴', 'J': '𝕵', 'K': '𝕶', 'L': '𝕷', 'M': '𝕸', 'N': '𝕹', 'O': '𝕺', 'P': '𝕻', 'Q': '𝕼', 'R': '𝕽', 'S': '𝕾', 'T': '𝕿', 'U': '𝖀', 'V': '𝖁', 'W': '𝖂', 'X': '𝖃', 'Y': '𝖄', 'Z': '𝖅'},
+            double_struck: { 'a': '𝕒', 'b': '𝕓', 'c': '𝕔', 'd': '𝕕', 'e': '𝕖', 'f': '𝕗', 'g': '𝕘', 'h': '𝕙', 'i': '𝕚', 'j': '𝕛', 'k': '𝕜', 'l': '𝕝', 'm': '𝕞', 'n': '𝕟', 'o': '𝕠', 'p': '𝕡', 'q': '𝕢', 'r': '𝕣', 's': '𝕤', 't': '𝕥', 'u': '𝕦', 'v': '𝕧', 'w': '𝕨', 'x': '𝕩', 'y': '𝕪', 'z': '𝕫', 'A': '𝔸', 'B': '𝔹', 'C': 'ℂ', 'D': '𝔻', 'E': '𝔼', 'F': '𝔽', 'G': '𝔾', 'H': 'ℍ', 'I': '𝕀', 'J': '𝕁', 'K': '𝕂', 'L': '𝕃', 'M': '𝕄', 'N': 'ℕ', 'O': '𝕆', 'P': 'ℙ', 'Q': 'ℚ', 'R': 'ℝ', 'S': '𝕊', 'T': '𝕋', 'U': '𝕌', 'V': '𝕍', 'W': '𝕏', 'Y': '𝕐', 'Z': 'ℤ'},
+            zαяgσ: {"a":"a̴","b":"b̴","c":"c̴","d":"d̴","e":"e̴","f":"f̴","g":"g̴","h":"h̴","i":"i̴","j":"j̴","k":"k̴","l":"l̴","m":"m̴","n":"n̴","o":"o̴","p":"p̴","q":"q̴","r":"r̴","s":"s̴","t":"t̴","u":"u̴","v":"v̴","w":"w̴","x":"x̴","y":"y̴","z":"z̴","A": "A̴","B":"B̴","C":"C̴","D":"D̴","E":"E̴","F":"F̴","G":"G̴","H":"H̴","I":"I̴","J":"J̴","K":"K̴","L":"L̴","M":"M̴","N":"N̴","O":"O̴","P":"P̴","Q":"Q̴","R":"R̴","S":"S̴","T":"T̴","U":"U̴","V":"V̴","W":"W̴","X":"X̴","Y":"Y̴","Z":"Z̴"}
+        };
+        
+        function mapText(text, mapName) {
+            const map = charMaps[mapName];
+            if (!map) return text;
+            if (mapName === 'flipped') {
+                 return text.split('').reverse().map(char => map[char] || char).join('');
+            }
+            return text.split('').map(char => map[char] || char).join('');
+        }
+        
+        function generateDecorations() {
+            const name = nameInput.value.trim();
+            if (name === '') {
+                resultsContainer.innerHTML = '';
+                initialMessage.style.display = 'block';
+                return;
+            }
+
+            initialMessage.style.display = 'none';
+            resultsContainer.innerHTML = ''; // Clear previous results
+            const selectedLanguage = languageSelect.value;
+            const decorations = selectedLanguage === 'arabic' ? arabicDecorations : englishDecorations;
+
+            decorations.forEach(decoFunc => {
+                const decoratedName = decoFunc(name);
+                const resultItem = `
+                    <div class="result-item glassmorphism rounded-xl p-4 flex flex-col md:flex-row items-center justify-between gap-4">
+                        <p class="text-lg font-mono text-center md:text-right flex-grow">${decoratedName}</p>
+                        <div class="flex gap-2">
+                            <button class="copy-btn bg-gray-700 hover:bg-emerald-500 text-white font-bold py-2 px-4 rounded-lg transition-colors" data-text="${decoratedName.replace(/"/g, '&quot;')}">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                            <button class="share-btn bg-gray-700 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded-lg transition-colors" data-text="${decoratedName}">
+                                <i class="fas fa-share-alt"></i>
+                            </button>
+                        </div>
+                    </div>`;
+                resultsContainer.innerHTML += resultItem;
+            });
+        }
+        
+        nameInput.addEventListener('input', generateDecorations);
+        languageSelect.addEventListener('change', generateDecorations);
+        
+        // --- EVENT LISTENERS for Copy/Share ---
+        resultsContainer.addEventListener('click', function (e) {
+            const copyButton = e.target.closest('.copy-btn');
+            const shareButton = e.target.closest('.share-btn');
+
+            if (copyButton) {
+                const textToCopy = copyButton.dataset.text;
+                copyToClipboard(textToCopy);
+            }
+            if (shareButton) {
+                const textToShare = shareButton.dataset.text;
+                shareText(textToShare);
+            }
+        });
+        
+        function copyToClipboard(text) {
+            const textarea = document.createElement('textarea');
+            // Decode HTML entities before copying
+            textarea.innerHTML = text;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+            
+            // Show toast
+            toast.classList.remove('opacity-0', 'translate-y-10');
+            setTimeout(() => {
+                toast.classList.add('opacity-0', 'translate-y-10');
+            }, 2000);
+        }
+
+        async function shareText(text) {
+             if (navigator.share) {
+                try {
+                    await navigator.share({
+                        title: 'اسم مزخرف',
+                        text: text,
+                    });
+                } catch (err) {
+                    console.error('Error sharing:', err);
+                }
+            } else {
+                // Fallback for desktop
+                copyToClipboard(text);
+                alert('تم نسخ النص! لا تتوفر المشاركة المباشرة على هذا الجهاز.');
+            }
+        }
+        
+        // --- READY-MADE NAMES TABS LOGIC ---
+        const tabsContainer = document.querySelector('.flex.justify-center.mb-6');
+        const tabsContent = document.getElementById('tabs-content');
+        const readyNames = {
+            boys: ['الـقـائـد', 'الـجـلاد', 'الـزعـيـم', 'الـسـفـاح', 'الـمـلـك', 'أسـطـورة', 'فـخـامـة', 'الـقـنـاص', 'الـصـقـر'],
+            girls: ['أمـيـرة', 'مـلـكـة', 'دلـوعـة', 'جـمـيـلـة', 'فـراشـة', 'قـمـر', 'نـجـمـة', 'وردة', 'سـاحـرة'],
+            games: ['⎝GͥOͣDͫ⎠', '꧁༒☬sunny☬༒꧂', 'SOUL々MORTAL', '亗『LEGEND』亗', 'Hydra | Dynamo', ' ĐàRkÇlöwn', '々DESTROYER', 'MR. BEAST', 'KING ▄︻̷̿┻̿═━一']
+        };
+
+        function renderTabContent(tab) {
+            tabsContent.innerHTML = '';
+            readyNames[tab].forEach(name => {
+                const item = `
+                    <div class="result-item glassmorphism rounded-xl p-4 flex items-center justify-between gap-4">
+                        <p class="text-lg font-mono">${name}</p>
+                        <button class="copy-btn bg-gray-700 hover:bg-emerald-500 text-white font-bold py-2 px-4 rounded-lg transition-colors" data-text="${name}">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </div>`;
+                tabsContent.innerHTML += item;
+            });
+        }
+
+        tabsContainer.addEventListener('click', (e) => {
+            const clickedTab = e.target.closest('.tab-btn');
+            if (!clickedTab) return;
+
+            // Update tab styles
+            tabsContainer.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('tab-active');
+                btn.classList.add('tab-inactive');
+            });
+            clickedTab.classList.add('tab-active');
+            clickedTab.classList.remove('tab-inactive');
+            
+            renderTabContent(clickedTab.dataset.tab);
+        });
+
+        tabsContent.addEventListener('click', (e) => {
+             const copyButton = e.target.closest('.copy-btn');
+             if(copyButton) {
+                 copyToClipboard(copyButton.dataset.text);
+             }
+        });
+
+        // Initial render for ready names
+        renderTabContent('boys');
+        
+        // --- RANDOM GENERATOR ---
+        const randomBtn = document.getElementById('random-btn');
+        const randomResult = document.getElementById('random-result');
+        const allReadyNames = [...readyNames.boys, ...readyNames.girls, ...readyNames.games];
+
+        randomBtn.addEventListener('click', () => {
+            const randomIndex = Math.floor(Math.random() * allReadyNames.length);
+            const randomName = allReadyNames[randomIndex];
+            
+            const randomDecorationSet = Math.random() > 0.5 ? arabicDecorations : englishDecorations;
+            const randomDecorationFunc = randomDecorationSet[Math.floor(Math.random() * randomDecorationSet.length)];
+            const decorated = randomDecorationFunc(randomName);
+            
+            randomResult.innerHTML = `
+                <div class="w-full flex items-center justify-between gap-4">
+                    <p>${decorated}</p>
+                    <button class="copy-btn bg-gray-700 hover:bg-emerald-500 text-white font-bold py-2 px-4 rounded-lg transition-colors" data-text="${decorated.replace(/"/g, '&quot;')}">
+                        <i class="fas fa-copy"></i>
+                    </button>
+                </div>
+            `;
+        });
+
+        randomResult.addEventListener('click', (e) => {
+            const copyButton = e.target.closest('.copy-btn');
+             if(copyButton) {
+                 copyToClipboard(copyButton.dataset.text);
+             }
+        });
+    });
+    </script>
+</body>
+</html>
+
